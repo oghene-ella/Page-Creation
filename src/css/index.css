@@ -19,6 +19,7 @@
     width: 35vw;
     height: fit-content;
     padding: 40px 20px;
+    box-shadow: 0px 0px 4px #a4e9f9b4;
     border: 1px solid #747474;
     border-radius: 30px;
     display: flex;

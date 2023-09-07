@@ -3,8 +3,8 @@ const date = new Date();
 
 // days of the week function
 const daysFunction = () => {
-	// declare variables
-	const day = document.querySelector(".day");
+	// declare variable
+	const day = document.querySelector("[data-testid='currentDayOfTheWeek']");
 
 	const dayOfTheWeek = date.getDay();
 
@@ -14,42 +14,24 @@ const daysFunction = () => {
 	} else if (dayOfTheWeek === 1) {
 		day.textContent = "Monday";
 	} else if (dayOfTheWeek === 2) {
-		date.textContent = "Tuesday";
+		day.textContent = "Tuesday";
 	} else if (dayOfTheWeek === 3) {
-		date.textContent = "Wednesday";
+		day.textContent = "Wednesday";
 	} else if (dayOfTheWeek === 4) {
 		day.textContent = "Thursday";
 	} else if (dayOfTheWeek === 5) {
-		date.textContent = "Friday";
+		day.textContent = "Friday";
 	} else if (dayOfTheWeek === 6) {
-		date.textContent = "Saturday";
+		day.textContent = "Saturday";
 	} else {
-		date.textContent = "Not Found";
+		day.textContent = "Invalid";
 	}
 };
 daysFunction();
 
 const timeFunction = () => {
-	const time = document.querySelector(".time_utc");
-	let millSec = date.getMilliseconds();
+	const time = document.querySelector("[data-testid='currentUTCTime']")
+	let millSec = date.getTime();
 	time.textContent = millSec;
-
-	/* Not hours, min and sec
-	let getHour = date.getHours();
-	let getMin = date.getMinutes();
-	let getSec = date.getSeconds();
-
-	// if statement
-	if (getMin > 0 && getMin <= 9) {
-		getMin = `0${getMin}`;
-	}
-	if (getSec > 0 && getSec <= 9) {
-		getSec = `0${getSec}`;
-	}
-
-	// join hour, minute, and second
-	const currentTime = `${getHour}:${getMin}:${getSec}`;
-	*/
-
 };
 timeFunction();
