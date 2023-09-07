@@ -31,10 +31,13 @@ daysFunction();
 
 const timeFunction = () => {
 	const time = document.querySelector(".time_utc");
+	let millSec = date.getMilliseconds();
+	time.textContent = millSec;
+
+	/* Not hours, min and sec
 	let getHour = date.getHours();
 	let getMin = date.getMinutes();
 	let getSec = date.getSeconds();
-	let am_pm;
 
 	// if statement
 	if (getMin > 0 && getMin <= 9) {
@@ -46,7 +49,7 @@ const timeFunction = () => {
 
 	// join hour, minute, and second
 	const currentTime = `${getHour}:${getMin}:${getSec}`;
+	*/
 
-	time.textContent = currentTime;
 };
 timeFunction();
