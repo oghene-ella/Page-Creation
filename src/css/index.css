@@ -4,7 +4,8 @@
     font-family: 'Oswald', sans-serif;
     color: white;
 }
-.outer-body{
+
+.outer-body {
     height: 100vh;
     background-color: #1A1D21;
     display: flex;
@@ -13,6 +14,7 @@
     align-items: center;
     justify-content: center;
 }
+
 .outer-body .main-body {
     width: 35vw;
     height: fit-content;
@@ -28,7 +30,6 @@
 .outer-body .main-body .img-header {
     width: 80%;
     height: fit-content;
-    /* border: 2px solid red; */
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -36,33 +37,116 @@
     align-items: center;
     gap: 1rem;
 }
-.outer-body .main-body .img-header img{
-    width: 20rem;
+
+.outer-body .main-body .img-header img {
+    width: 75%;
     margin: 0 auto;
     border-radius: 30px;
 }
-.outer-body .main-body .img-header h1{
+
+.outer-body .main-body .img-header h1 {
     font-size: 40px;
     letter-spacing: 2px;
 }
 
 /* body's other attributes */
-.outer-body .main-body .att-body{
+.outer-body .main-body .att-body {
     width: 80%;
-    /* border: 2px solid blue; */
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
 }
-.outer-body .main-body .att-body .date_time{
+
+.outer-body .main-body .att-body img {
+    width: 40px;
+}
+
+.outer-body .main-body .att-body .date_time,
+.outer-body .main-body .att-body .track,
+.outer-body .main-body .att-body .github {
     display: flex;
     gap: 1.5rem;
 }
-.outer-body .main-body .att-body .date_time span span{
+
+.outer-body .main-body .att-body .date_time span span {
     display: flex;
-} 
+    gap: 5px;
+}
+
+.outer-body .main-body .att-body .date_time span span p,
+.outer-body .main-body .att-body .track span p:last-child,
+.outer-body .main-body .att-body .github span a {
+    color: #5DD3ED;
+}
+
+
 /* footer styling */
-.outer-body footer{
+.outer-body footer {
     font-size: 20px;
+}
+
+@media only screen and (max-width: 870px) and (min-width: 719px) {
+    .outer-body .main-body {
+        width: 40vw;
+    }
+}
+
+@media only screen and (max-width: 719px) and (min-width: 600px) {
+    .outer-body .main-body {
+        width: 50vw;
+    }
+    .outer-body .main-body .img-header img {
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 599px) and (min-width: 411px) {
+    .outer-body .main-body {
+        width: 70vw;
+    }
+
+    .outer-body .main-body .att-body img {
+        width: 35px;
+    }
+    .outer-body .main-body .img-header img {
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 410px) and (min-width: 324px) {
+    .outer-body .main-body {
+        width: 80vw;
+    }
+
+    .outer-body .main-body .img-header img {
+        width: 85%;
+    }
+
+    .outer-body .main-body .att-body {
+        width: 85%;
+    }
+
+    .outer-body .main-body .att-body img {
+        width: 30px;
+    }
+}
+
+@media only screen and (max-width: 324px) and (min-width: 150px) {
+    .outer-body .main-body {
+        width: 85vw;
+        padding: 40px 10px;
+    }
+
+    .outer-body .main-body .img-header img {
+        width: 85%;
+    }
+
+    .outer-body .main-body .att-body {
+        width: 85%;
+    }
+
+    .outer-body .main-body .att-body img {
+        width: 28px;
+    }
 }
