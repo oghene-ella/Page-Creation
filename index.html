@@ -24,7 +24,7 @@
                 <img src="./src/assets/profile4.jpeg" alt="Ellahhh" data-testid="slackDisplayImage">
 
                 <!-- slack name -->
-                <h1 data-testid="slackUserName">Oghenekaro Emmanuella</h1>
+                <h1 data-testid="slackUserName">Ellahhh</h1>
             </section>
 
             <section class="att-body">
@@ -35,14 +35,17 @@
                     <span>
                         <p>Day & UTC Time</p>
                         <span>
-                            <p data-testid="currentDayOfTheWeek">Monday  </p>
-                            <p data-testid="currentUTCTime"> | 9:14 PM local time</p>
+                            <p data-testid="currentDayOfTheWeek" class="day">Monday</p>
+                            <p> | </p>
+                            <p 
+                            data-testid="currentUTCTime" class="time_utc">9:14 PM</p>
+                            <p>local time</p>
                         </span>
                     </span>
                 </section>
 
                 <!-- track -->
-                <section class="date_time">
+                <section class="track">
                     <img src="./src/assets/task.svg" alt="" srcset="">
                     <span>
                         <p>Track</p>
@@ -51,7 +54,7 @@
                 </section>
 
                 <!-- github -->
-                <section class="date_time">
+                <section class="github">
                     <img src="./src/assets/github.svg" alt="" srcset="">
                     <span>
                         <p>Github-Repo</p>
@@ -66,5 +69,7 @@
             <p>Coded by Ellahhh ❤️✨</p>
         </footer>
     </section>
+
+    <script src="./src/index.js"></script>
 </body>
 </html>
